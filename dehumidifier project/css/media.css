@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #0073e6;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #0073e6;
+}
+
+/* Media Components */
+.audio-component, .video-component {
+    margin: 20px 0;
+    text-align: center;
+}
+
+audio, video {
+    margin-top: 10px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    video {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    Author: SAHIL
+    Student Number: C0949902
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Dehumidifiers Inc</title>
+    <link rel="stylesheet" href="css/faqs.css">
+</head>
+<body>
+    <header>
+        <img src="images/company-banner.jpg" alt="Dehumidifiers Inc Banner" width="100%" height="200">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Dehumidifiers Inc Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faqs.html" class="active">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- FAQs Section -->
+        <section class="faqs">
+            <h1>Frequently Asked Questions (FAQs)</h1>
+            <p>Find answers to some of the most common questions we receive. If you need further assistance, feel free to <a href="contact.html">contact us</a>.</p>
+
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+                <button class="faq-question">What is a dehumidifier and how does it work?</button>
+                <div class="faq-answer">
+                    <p>A dehumidifier is a device that reduces the level of humidity in the air. It works by drawing in the moist air, cooling it to condense the water vapor, and then releasing the dry air back into the room.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+                <button class="faq-question">How often should I clean my dehumidifier?</button>
+                <div class="faq-answer">
+                    <p>We recommend cleaning your dehumidifier every two weeks, especially the filter and water reservoir. This ensures optimal performance and longevity of your device.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+                <button class="faq-question">Can a dehumidifier be used in all rooms?</button>
+                <div class="faq-answer">
+                    <p>Yes, dehumidifiers can be used in any room, but different models are designed for specific conditions. For instance, a portable dehumidifier is great for small spaces, while a whole-house dehumidifier is ideal for large areas with high humidity levels.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+                <button class="faq-question">How much does it cost to run a dehumidifier?</button>
+                <div class="faq-answer">
+                    <p>The cost to run a dehumidifier varies depending on its size and energy efficiency. On average, a dehumidifier consumes between 250 to 500 watts of electricity, which costs around $0.03 to $0.10 per hour to operate, depending on local electricity rates.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+                <button class="faq-question">Do dehumidifiers help with allergies?</button>
+                <div class="faq-answer">
+                    <p>Yes! Dehumidifiers help reduce mold, dust mites, and allergens in the air, which can significantly alleviate allergy symptoms for sensitive individuals.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2099. All Rights Reserved.</p>
+        <p><a href="mailto:info@dehumidifiersinc.com">Request Information</a></p>
+        <p>Your Name &nbsp; &nbsp; Your Student Number</p>
+    </footer>
+
+    <script>
+        // FAQ Toggle functionality
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
